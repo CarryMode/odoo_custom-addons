@@ -5,6 +5,10 @@
     'description': '''
     This is a test app
     ''',
+
+    'data': [
+        'security/ir.model.access.csv',
+    ],
     
 
 }
