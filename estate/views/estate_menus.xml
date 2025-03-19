@@ -3,8 +3,8 @@
 <odoo>
 
 
-<menuitem id="estate_menu_root" name="Estate Property"> <!-- Name of the icon in the main menu -->
-    <menuitem id="estate_property_menu" name="Estate menu">
+<menuitem id="estate_menu_root" name="Real Estate"> <!-- Name of the icon in the main menu -->
+    <menuitem id="estate_property_menu" name="Advertisements">
         <menuitem id="estate_property_menu_action" action="estate_property_action"/>
     </menuitem>
 </menuitem>
