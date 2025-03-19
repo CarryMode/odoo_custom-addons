@@ -2,9 +2,9 @@ from odoo import models, fields
 
 class EstateProperty(models.Model):
     _name = "estate.property"
-    _description = 'Test module for studying'
+    _description = 'Estate Property Module'
 
-    name = fields.Char('Estate Name', required = True)
+    name = fields.Char('Estate Property', required = True)
     description = fields.Text('Description of estate')
     postcode = fields.Char()
     date_availability = fields.Date()
@@ -15,10 +15,10 @@ class EstateProperty(models.Model):
     garden = fields.Boolean()
     garden_area = fields.Integer()
     garden_orientation = fields.Selection([
-        ('North', 'north'),
-        ('South', 'south'),
-        ('East', 'east'),
-        ('West', 'west'),
+        ('north','North'),
+        ('south','South'),
+        ('east','East'),
+        ('west','West'),
     ])
 
 

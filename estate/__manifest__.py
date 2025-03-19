@@ -1,18 +1,20 @@
 {
-    'name': "Test App",
+    'name': "Estate App",
     'depends': ['base'],
     'application': 'True',
-    'description': '''
-    This is a test app
-    ''',
+    'description': 'This is a test estate app',
 
-    '''
-    'data' is sequentially loaded, so write down the nondepended files first and then the depended files.
-    '''
+
+
+  
 
     'data': [
         'security/ir.model.access.csv',
+        'views/estate_property_views.xml',
+        'views/estate_menus.xml',
     ],
     
 
 }
+
+
