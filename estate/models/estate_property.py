@@ -6,7 +6,7 @@ class EstateProperty(models.Model):
     _name = "estate.property"
     _description = 'Estate Property Module'
 
-    name = fields.Char('Estate Property', required = True)
+    name = fields.Char('Title', required = True)
     description = fields.Text('Description of estate')
     postcode = fields.Char()
     date_availability = fields.Date(default = lambda self: date.today() + relativedelta(months=3), copy = False)
@@ -16,7 +16,8 @@ class EstateProperty(models.Model):
     garage = fields.Boolean(default = True)
     garden = fields.Boolean()
     garden_area = fields.Integer()
-    active = fields.Boolean()
+    active = fields.Boolean(default = True)
+    living_area = fields.Integer()
     garden_orientation = fields.Selection([
         ('north','North'),
         ('south','South'),
@@ -30,7 +31,7 @@ class EstateProperty(models.Model):
         ('sold','Sold'),
         ('cancelled','Cancelled'),
     ],
-    requider = True,
+    required = True,
     copy = False,
     default = 'new')
 
