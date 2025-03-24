@@ -20,6 +20,7 @@ class EstateProperty(models.Model):
     living_area = fields.Integer()
     facades = fields.Integer()
     available_from = fields.Date()
+    available = fields.Boolean()
     garden_orientation = fields.Selection([
         ('north','North'),
         ('south','South'),

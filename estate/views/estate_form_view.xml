@@ -34,6 +34,7 @@
                             <field name='garden'/>
                             <field name='garden_area'/>
                             <field name='garden_orientation'/>
+                            <field name='available'/>
                         </group>
                     </page>
                 </notebook>
