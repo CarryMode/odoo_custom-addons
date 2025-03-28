@@ -6,7 +6,7 @@
     <field name='name'>estate.property.ui.form</field>
     <field name='model'>estate.property</field>
     <field name='arch' type='xml'>
-        <form string='Estate'>
+        <form>
             <sheet>
                 <h1>
                     <field name='name'/>
